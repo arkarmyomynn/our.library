@@ -73,9 +73,10 @@ footer {
 
 footer p {
     color: var(--font-color);
-    font-size: 60%;
+    font-size: 100%;
 }
 footer p a {
+    font-size: 70%;
     color: var(--font-color);
     transition: 0.3s ease-in-out;
 }
@@ -95,10 +96,28 @@ footer p a:hover {
 
 
 }
+.book-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2%;
+}
+.book-info h1{
+    font-size: 60%;
+}
+.book-info p a{
+    color:var(--font-color);
+    font-size: 70%;
+}
+.main-container {
+    overflow: scroll;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
 
 .book {
     position: relative;
-    width: 5em;
+    min-width: 5em;
     height: 7em;
     background-color: aliceblue;
     overflow: hidden;
@@ -108,7 +127,7 @@ footer p a:hover {
 
 .book img {
     position: relative;
-    width: 5em;
+    min-width: 5em;
     height: 7em;
     object-fit: cover;
     transition: 0.6s;
@@ -184,7 +203,7 @@ footer p a:hover {
 
     .book {
         position: relative;
-        width: 10em;
+        min-width: 10em;
         height: 14em;
         background-color: aliceblue;
         overflow: hidden;
@@ -194,7 +213,7 @@ footer p a:hover {
 
     .book img {
         position: relative;
-        width: 10em;
+        min-width: 10em;
         height: 14em;
         object-fit: cover;
         transition: 0.6s;
@@ -283,7 +302,7 @@ footer p a:hover {
     transform: scale(0.95);
 }
 
-.category h4 {
+.category a{
     color: var(--second-font-color);
     font-size: 80%;
 }
