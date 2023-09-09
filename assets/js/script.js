@@ -13,17 +13,19 @@ switch (time) {
     case 9:
     case 10:
     case 11:
-    case 12:
+    
         document.getElementById("greet").innerHTML= "Good Morning!";
-        break;
+    break;
+    case 12:
     case 13:
     case 14:
     case 15:
     case 16:
     case 17:
+    
+        document.getElementById("greet").innerHTML = "Good Afternoon!";
+    break;
     case 18:
-      document.getElementById("greet").innerHTML= "Good Afternoon!";
-        break
     case 19:
     case 20:
     case 21:
@@ -33,14 +35,15 @@ switch (time) {
       document.getElementById("greet").innerHTML= "Good Evening!";
 
         break;
+
 }
 function category() {
     console.log("hi");
     $(".mainbody").hide();
-    $('.categories').show();
+    $('.categories').slideDown();
 }
 function homebody() {
     console.log("hi");
-    $(".mainbody").show();
+    $(".mainbody").slideDown();
     $(".categories").hide();
 }
