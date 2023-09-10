@@ -14,7 +14,7 @@ switch (time) {
     case 10:
     case 11:
     
-        document.getElementById("greet").innerHTML= "Good Morning!";
+        document.getElementById("greet").innerHTML= "Good Morning";
     break;
     case 12:
     case 13:
@@ -23,7 +23,7 @@ switch (time) {
     case 16:
     case 17:
     
-        document.getElementById("greet").innerHTML = "Good Afternoon!";
+        document.getElementById("greet").innerHTML = "Good Afternoon";
     break;
     case 18:
     case 19:
@@ -32,7 +32,7 @@ switch (time) {
     case 22:
     case 23:
     case 24:
-      document.getElementById("greet").innerHTML= "Good Evening!";
+      document.getElementById("greet").innerHTML= "Good Evening";
 
         break;
 
@@ -47,3 +47,4 @@ function homebody() {
     $(".mainbody").slideDown();
     $(".categories").hide();
 }
+
